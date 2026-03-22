@@ -1,7 +1,7 @@
-# Backend Project Break
-## Marco Aguirre y Alesandro Quirós
+# Final Project Break
+## Alesandro Quirós
 
-URL API: https://tienda-dp-contact.onrender.com
+URL API: 
 
 ## Instalación
 Primero es importante tener [Node.js](https://nodejs.org/en) instalado en local, ya que el proyecto funciona con Node.js. Una vez instalado, abrir una terminal e ir al directorio donde está el proyecto.
@@ -26,8 +26,10 @@ Las técnologias usadas son las siguientes:
 
 ## Rutas y uso
 Las rutas de la api son las siguientes:
-- POST /api/create: Crea un producto
-- GET /api: Obtiene todos los productos
-- GET /api/id/:id: Obtiene un producto por su id
-- PUT /api/id/:id: Actualiza un producto por su id
-- DELETE /api/id/:id: Elimina un producto por su id
+- POST /create: Crea un producto
+- GET /: Obtiene todos los productos
+- GET /:id: Obtiene un producto por su id
+- PUT /update/:id: Actualiza un producto por su id
+- DELETE /delete/:id: Elimina un producto por su id
+
+https://github.com/AlesandroQG/backend-tienda-finalprojectbreak
