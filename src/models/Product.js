@@ -1,8 +1,5 @@
 const mongoose = require('mongoose');
 
-const Categories = ['Camisetas', 'Pantalones', 'Zapatos', 'Accesorios'];
-const Sizes = ['XS', 'S', 'M', 'L', 'XL', 'XXL','32','34','36','38','40','42','44','46'];
-
 const productSchema = new mongoose.Schema({
   nombre: {
     type: String,
@@ -18,16 +15,6 @@ const productSchema = new mongoose.Schema({
     type: String,
     required: true,
     trim: true,
-  },
-  categoria: {
-    type: String,
-    enum: Categories,
-    required: true,
-  },
-  talla: {
-    type: String,
-    enum: Sizes,
-    required: true,
   },
   precio: {
     type: Number,

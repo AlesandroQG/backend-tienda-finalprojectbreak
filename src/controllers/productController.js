@@ -43,7 +43,6 @@ const productController = {
             if (!task) {
                 return res.status(404).send({message: "There is no product with that id"});
             }
-            res.redirect("/products");
         } catch (error) {
             console.log(error);
             res.status(501).send({message: "There was a problem trying to update the product"});
