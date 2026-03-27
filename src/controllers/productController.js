@@ -4,7 +4,7 @@ const productController = {
     createProduct: async (req, res) => {
         try {
             const product = await Product.create(req.body);
-            res.redirect("/dashboard");
+            res.status(201).json(product);
         } catch (error) {
             console.log(error);
             res.status(501).send({message: "There was a problem trying to create the product"});
