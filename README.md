@@ -26,10 +26,25 @@ Las técnologias usadas son las siguientes:
 
 ## Rutas y uso
 Las rutas de la api son las siguientes:
-- POST /create: Crea un producto
-- GET /: Obtiene todos los productos
-- GET /:id: Obtiene un producto por su id
-- PUT /update/:id: Actualiza un producto por su id
-- DELETE /delete/:id: Elimina un producto por su id
+- POST /products/create: Crea un producto
+- GET /products: Obtiene todos los productos
+- GET /products/:id: Obtiene un producto por su id
+- PUT /products/update/:id: Actualiza un producto por su id
+- DELETE /products/delete/:id/:user: Elimina un producto por su id (user para verificación)
+- POST /admin/create: Crea un usuario admin
+- POST /admin/login: Verifica el login de un usuario
+- PUT /admin/update/:id: Cambia la contraseña de un usuario admin
+
+# Crear usuario admin
+Para crear un usuario admin, hay que hacerlo con una aplicación como [Postman](https://www.postman.com). Una vez descargada y lista para usar, con la api en funcionamiento ponemos la siguiente url: http://localhost:3000/admin/create
+
+Y en el body, este contenido:
+```js
+{
+    "username": "admin",
+    "password": "1234"
+}
+```
+Reemplazar el usuario y contraseña con los usuarios y contraseñas correspondientes y enviar la solicitud.
 
 https://github.com/AlesandroQG/backend-tienda-finalprojectbreak
