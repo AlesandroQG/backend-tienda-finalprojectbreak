@@ -45,6 +45,7 @@ const productController = {
             if (!product) {
                 return res.status(404).json({message: "There is no product with that id"});
             }
+            res.status(201).json(product);
         } catch (error) {
             console.error(error);
             res.status(501).json({message: "There was a problem trying to update the product"});
